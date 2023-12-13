@@ -1,6 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import blog1 from "../../public/blog-1-1000x600.jpg.webp";
+import blog2 from "../../public/slider-2-1600x800.jpg.webp";
+import blog3 from "../../public/blog-3-500x400.jpg.webp";
+import blog4 from "../../public/blog-4-500x400.jpg.webp";
+import blog5 from "../../public/blog-5-500x400.jpg.webp";
+import blog6 from "../../public/blog-6-500x400.jpg.webp";
 import blog7 from "../../public/blog-7-500x400.jpg.webp";
 import { ChatLeftDots, Heart, Share } from "react-bootstrap-icons";
 import Link from "next/link";
@@ -66,7 +71,7 @@ const Home = () => {
       <div className="flex flex-col gap-3">
         {/* img  */}
         <div>
-          <Image src={blog1} alt="blog1" />
+          <Image src={blog2} alt="blog1" />
         </div>
 
         {/* category */}
@@ -117,12 +122,61 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className="flex flex-col md:flex-row">
+      <div className="flex md:flex-row flex-col gap-3">
 
         <div className="flex flex-1 flex-col gap-3">
           {/* img  */}
           <div>
-            <Image src={blog1} alt="blog1" />
+            <Image src={blog3} alt="blog1" />
+          </div>
+
+          {/* category */}
+          <div className="flex justify-between">
+            <div
+              className="border-[1px] uppercase border-orange-400 text-gray-50 hover:text-orange-400 bg-orange-400 hover:bg-gray-50 hover:border-orange-400 transition ease-in-out delay-75  block mr-auto px-4 py-1 font-semibold "
+            >
+              Travel
+            </div>
+            <div className="flex gap-3 text-gray-500 ">
+              <div className="flex items-center gap-2">
+                <Share />
+                Share
+              </div>
+              <div className="flex items-center gap-2">
+                <Heart />
+                03
+              </div>
+              <div className="flex items-center gap-2">
+                <ChatLeftDots /> 06
+              </div>
+            </div>
+          </div>
+
+          {/* date  */}
+          <div>
+            <p className="text-gray-500" >Monday, October 13, 2017</p>
+          </div>
+
+          <Link href={"/"} className="text-2xl no-underline text-slate-950 hover:text-orange-400 font-semibold">
+            This is post about travel, adventure and fun
+          </Link>
+
+          <p className="text-justify">
+            Sed ut perspiciatis unde omnis iste natus error sit doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo veritatis et quasi dolore magnam aliquam quaerat voluptatem.
+          </p>
+
+          <Link
+            href={"/"}
+            className="border-[1px] uppercase no-underline border-orange-400 text-orange-400 hover:text-white hover:bg-orange-400 transition ease-in-out delay-75  block mr-auto px-7 py-3 font-semibold shadow-lg "
+          >
+            Read More
+          </Link>
+        </div>
+
+        <div className="flex flex-1 flex-col gap-3">
+          {/* img  */}
+          <div>
+            <Image src={blog4} alt="blog1" />
           </div>
 
           {/* category */}
@@ -175,7 +229,7 @@ const Home = () => {
         <div className="flex flex-1 flex-col gap-3">
           {/* img  */}
           <div>
-            <Image src={blog1} alt="blog1" />
+            <Image src={blog5} alt="blog1" />
           </div>
 
           {/* category */}
@@ -224,7 +278,7 @@ const Home = () => {
         <div className="flex flex-1 flex-col gap-3">
           {/* img  */}
           <div>
-            <Image src={blog1} alt="blog1" />
+            <Image src={blog6} alt="blog1" />
           </div>
 
           {/* category */}

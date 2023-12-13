@@ -1,10 +1,16 @@
 import Image from "next/image";
 import React from "react";
 import author1 from "../../public/author-1-200x200.jpg.webp";
-import post1 from "../../public/recent-post-1-150x200.jpg.webp";
+import rpost1 from "../../public/recent-post-1-150x200.jpg.webp";
+import rpost2 from "../../public/recent-post-2-150x200.jpg.webp";
+import rpost3 from "../../public/recent-post-3-150x200.jpg.webp";
+import rpost4 from "../../public/recent-post-4-150x200.jpg.webp";
 import ad1 from "../../public/advertise-1-400x500.jpg.webp";
 import instaside1 from "../../public/instragram-side-1-150x150.jpg.webp";
-
+import instaside3 from "../../public/instragram-side-3-150x150.jpg.webp";
+import instaside4 from "../../public/instragram-side-4-150x150.jpg.webp";
+import instaside5 from "../../public/instragram-side-5-150x150.jpg.webp";
+import instaside6 from "../../public/instragram-side-6-150x150.jpg.webp";
 import {
   Facebook,
   Instagram,
@@ -22,6 +28,7 @@ import cat4 from "../../public/category-4-400x150.jpg.webp";
 
 const Sidebar = () => {
   return (
+
     <section className=" w-full lg:w-[30%] flex flex-col gap-10 my-10 relative ">
       <Image
         src={author1}
@@ -93,7 +100,7 @@ const Sidebar = () => {
         </div>
         <div className="relative" >
           <div className=" min-w-[18.2rem]" >
-            <Image src={cat1} className="w-full" alt="" />
+            <Image src={cat2} className="w-full" alt="" />
           </div>
           <span className="uppercase absolute bottom-0 right-0 left-0 bg-orange-400 text-white p-1 sm:p-2 ">
             Travel
@@ -101,7 +108,7 @@ const Sidebar = () => {
         </div>
         <div className="relative" >
           <div className=" min-w-[18.2rem]" >
-            <Image src={cat1} className="w-full" alt="" />
+            <Image src={cat3} className="w-full" alt="" />
           </div>
           <span className="uppercase absolute bottom-0 right-0 left-0 bg-orange-400 text-white p-1 sm:p-2 ">
             Travel
@@ -109,7 +116,7 @@ const Sidebar = () => {
         </div>
         <div className="relative" >
           <div className=" min-w-[18.2rem]" >
-            <Image src={cat1} className="w-full" alt="" />
+            <Image src={cat4} className="w-full" alt="" />
           </div>
           <span className="uppercase absolute bottom-0 right-0 left-0 bg-orange-400 text-white p-1 sm:p-2 ">
             Travel
@@ -124,7 +131,7 @@ const Sidebar = () => {
       <div className="flex flex-col sm:flex-row flex-wrap gap-4">
         <div className="flex gap-4 ">
           <div>
-            <Image src={post1} className="w-[80px]" alt="" />
+            <Image src={rpost1} className="w-[80px]" alt="" />
           </div>
 
           <div className="flex flex-col">
@@ -141,7 +148,7 @@ const Sidebar = () => {
         </div>
         <div className="flex gap-4">
           <div>
-            <Image src={post1} className="w-[80px]" alt="" />
+            <Image src={rpost2} className="w-[80px]" alt="" />
           </div>
 
           <div className="flex flex-col">
@@ -158,7 +165,7 @@ const Sidebar = () => {
         </div>
         <div className="flex gap-4">
           <div>
-            <Image src={post1} className="w-[80px]" alt="" />
+            <Image src={rpost3} className="w-[80px]" alt="" />
           </div>
 
           <div className="flex flex-col">
@@ -175,7 +182,7 @@ const Sidebar = () => {
         </div>
         <div className="flex gap-4">
           <div>
-            <Image src={post1} className="w-[80px]" alt="" />
+            <Image src={rpost4} className="w-[80px]" alt="" />
           </div>
 
           <div className="flex flex-col">
@@ -211,22 +218,22 @@ const Sidebar = () => {
             <Image src={instaside1} width={200} alt="" />
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <Image src={instaside1} width={200} alt="" />
+            <Image src={instaside4} width={200} alt="" />
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <Image src={instaside1} width={200} alt="" />
+            <Image src={instaside3} width={200} alt="" />
           </div>
         </div>
 
         <div className="flex items-center justify-center gap-2 lg:gap-3">
           <div className="flex-1 relative flex items-center justify-center">
-            <Image src={instaside1} width={200} alt="" />
+            <Image src={instaside4} width={200} alt="" />
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <Image src={instaside1} width={200} alt="" />
+            <Image src={instaside5} width={200} alt="" />
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <Image src={instaside1} width={200} alt="" />
+            <Image src={instaside6} width={200} alt="" />
           </div>
         </div>
 
@@ -257,6 +264,7 @@ const Sidebar = () => {
           adventure
         </span>
       </div>
+
     </section>
   );
 };
