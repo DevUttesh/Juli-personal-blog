@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel-control-next-icon {
+  border: 2px solid white !important ;
+  background-color: black;
+  z-index: 10 !important ;
+}
+
+.carousel-control-prev-icon {
+  border: 2px solid white !important ;
+  background-color: black;
+  z-index: 10 !important ;
+}
+
+.carousel-indicators .active {
+    background-color: white !important;
+}
+.carousel-indicators button {
+    background-color: transparent !important ;
+  border: 2px solid white !important;
+  border-radius: 100%;
+  width: 15px !important ;
+  height: 15px !important ;
+  z-index: 10 !important;
+}
+.nav-link {
+  font-weight: 500;
+  height: 4rem ;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.nav-link:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(251 146 60 / var(--tw-text-opacity)) !important ;
+
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+
+  transition: ease-in-out 0.3s;
+}
+.dropdown-menu {
+  position: absolute !important ;
+  right: 0 !important ;
+  border-radius: 0 !important ;
+}
+
+.dropdown-menu[data-bs-popper]{
+  left: -1px !important ;
+}
